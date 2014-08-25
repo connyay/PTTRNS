@@ -1,0 +1,26 @@
+{
+  "name": "PTTRNS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/connyay/PTTRNS.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/connyay/PTTRNS/issues"
+  },
+  "homepage": "https://github.com/connyay/PTTRNS",
+  "dependencies": {
+    "express": "3.4.7",
+    "mongoose": "3.8.1",
+    "request": "^2.40.0",
+    "q": "^1.0.1",
+    "moment": "^2.8.1"
+  }
+}
