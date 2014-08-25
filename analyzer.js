@@ -1,7 +1,5 @@
 'use strict';
 
-var util = require('util');
-
 var request = require('request');
 var moment = require('moment');
 var Q = require('q');
@@ -22,7 +20,6 @@ var dateFormat = 'YYYY-MM-DD';
 var stockPoints = [];
 
 
-
 function fetchSymbolGroup(group) {
     var deferred = Q.defer();
     var symbols = '"' + companies[group].join('", "') + '"';
@@ -37,13 +34,13 @@ function fetchSymbolGroup(group) {
         data.query.results.quote.forEach(function(stock) {
             stockPoints.push({
                 'symbol': stock.Symbol,
-                'date': stock['Date'],
+                'date': stock.Date,
                 'open': stock.Open,
                 'close': stock.Close,
                 'high': stock.High,
                 'low': stock.Low,
                 'volume': stock.Volume,
-                'adj-close': stock['Adj_Close']
+                'adj-close': stock.Adj_Close
             });
         });
         deferred.resolve();
