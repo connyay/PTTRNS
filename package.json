@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/connyay/PTTRNS",
   "dependencies": {
+    "compression": "^1.0.11",
     "express": "3.4.7",
+    "moment": "^2.8.1",
     "mongoose": "3.8.1",
-    "request": "^2.40.0",
     "q": "^1.0.1",
-    "moment": "^2.8.1"
+    "request": "^2.40.0"
   }
 }
