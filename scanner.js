@@ -21,4 +21,5 @@ StockPoint.find({}, function(err, points) {
     for (var company in companies) {
         scan(company, companies[company]);
     }
+    process.exit(0);
 });
