@@ -2,6 +2,7 @@
 
 var mongoose = require('mongoose');
 require('./models/StockPoint');
+require('./models/Pattern');
 
 var mongoDbURL = 'mongodb://localhost/pttnrs';
 if (process.env.MONGOHQ_URL) {
